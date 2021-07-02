@@ -72,6 +72,33 @@ function addTransactionDOM(transaction) {
 }
 
 
+// Update the total
+
+function updateValues()
+{
+    const amounts = transactions.map((transaction) => transaction.amount);
+
+    const total = amount.reduce((bal, value) => (bal += value), 0).toFixed(2);
+
+    const income = amounts
+    .filter((value) => value > 0)
+    .reduce((bal, value) => (bal += value), 0)
+    .toFixed(2);
+
+    const expense = 
+    amounts
+        .filter((value) => value < 0)
+        .reduce((bal, value) => (bal += value), 0) * -(1).toFixed(2);
+
+        inflow.innerText = `$${income}`;
+        
+}
+
+
+
+
+
+
 
 
 
