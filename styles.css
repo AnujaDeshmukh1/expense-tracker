@@ -137,15 +137,45 @@ font-size: 12px;
     height: 25px;
 }
 
+#text:focus,
+#amount:focus {
+    width: 110%;
+    transition: 0.5s;
+    border-bottom: 2px solid steelblue;
+    border-right: 2px solid steelblue;
+}
 
+ul {
+    list-style: none;
+    display: inline;
+}
 
+ul li {
+    font-weight: bolder;
+    font-size: 21px;
+}
 
+#error_msg {
+    color: red;
+    background-color: rgb(224, 189, 183);
+    font-weight: bolder;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
 
+.list {
+    color: azure;
+}
 
+footer {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
 
-
-
-
+footer a{
+    color: rgb(39, 3, 36);
+}
 
 
 
