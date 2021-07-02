@@ -8,13 +8,13 @@ const localStorageTransactions = JSON.parse(
     localStorage.getItem("transactions")
 );
 
-let transactions = localStorage.getItem("transactions") !== null ? localStorageTransactions :[];
+let transactions = localStorage.getItem("transactions") !== null ? localStorageTransactions : [];
 
 // Add transactions
 function addTransaction(e) {
     e.preventDefault();
 
-    if (text.nodeValue.trim() === "" || amount.nodeValue.trim() === "") {
+    if (text.value.trim() === "" || amount.value.trim() === "") {
         document.getElementById("error_msg").innerHTML = "<span >Error: Please enter decription and amount!</span>";
         setTimeout(
             () => (document.getElementById("error_msg").innerHTML = ""),
@@ -25,9 +25,9 @@ function addTransaction(e) {
 
     else{
         const transaction = {
-            id: generatorID(),
-            text: text.nodeValue,
-            amount: +amount.nodeValue,
+            id: generateID(),
+            text: text.value,
+            amount: +amount.value,
         };
 
         transactions.push(transaction);
