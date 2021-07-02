@@ -50,6 +50,27 @@ function generateID() {
     return Math.floor(Math.random() * 100000000);
 }
 
+// Transactions History 
+function addTransactionDOM(transaction) {
+    const sign = transaction.amount < 0 ? "-" : "+";
+
+    const item = document.createElement("li");
+
+    // Add Class based on value
+    item.classList.add(transaction.amount < 0 ? "minus" : "plus");
+
+    item.innerHTML = `
+    ${transaction.text} ${Math.abs(
+        transaction.amount
+    )} <button class="delete-btn" onclick="removeTransaction(${
+        transaction.id
+
+    })">X</button>
+    `;
+
+    list.appendChild(item);
+}
+
 
 
 
