@@ -105,7 +105,7 @@ label {
     display: inline-block;
     margin: 10px 0;
     font-weight: bolder;
-    color:yellow;
+    color: yellow;
 }
 
 .btn {
@@ -172,15 +172,12 @@ ul li {
 footer {
     text-align: center;
     font-weight: bolder;
-    color: white;
+    color: yellow;
 }
 
 footer a{
     color: rgb(39, 3, 36);
 }
-
-
-
 
 
 
