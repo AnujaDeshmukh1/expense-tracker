@@ -105,6 +105,7 @@ label {
     display: inline-block;
     margin: 10px 0;
     font-weight: bolder;
+    color:yellow;
 }
 
 .btn {
@@ -114,6 +115,7 @@ label {
     border-radius: 1rem;
     outline: none;
     background-color: rgb(230, 165, 236);
+    color:black;
 }
 
 color: whitesmoke;
