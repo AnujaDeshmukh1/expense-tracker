@@ -94,29 +94,30 @@ function updateValues()
         
 }
 
+// Remove transaction by ID
 
+function removeTransaction(id) {
+    transactions = transactions.filter((transaction) => transaction.id !== id);
 
+    updateLocalStorage();
 
+    start();
+}
 
+// Update local storage transactions
 
+function updateLocalStorage() {
+    localStorage.setItem("transactions", JSON.stringify(transactions));
+}
 
+// start app
 
+function start(){
+    list.innerHTML = "";
+    transactions.forEach(addTransactionDOM);
+    updateValues();
+}
 
+start();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+form.addEventListener("submit", addTransaction);
