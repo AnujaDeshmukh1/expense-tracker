@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(222, 193, 224);
+}
+
+.title {
+    background-color: rgb(230, 165, 236);
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.container {
+    padding: 30px 40px;
+    border-radius: 1rem;
+    border: 3px solid white;
+    margin: 25px;
+    background-color: rgb(120, 16, 134, 0.685);
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin: 0;
+    margin: 10px 0 10px;
+}
+
+h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: azure;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: azure;
+}
+
+#balance {
+    color: azure;
+}
+
+.income-expense {
+    background-color: rgb(230, 165, 236);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685), 
+                0 5px 6px rgba(58, 73, 80, 0.685);
+}
+
+.income-expense > div {
+    flex: 1;
+    text-align: center;
+}
+
+.income,
+.expense,
+#balance {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    font-weight: bolder;
+}
+
+
+.income {
+    color: rgb(194, 186, 78);
+}
+
+.bg-dark {
+    background-color: rgb(39, 3, 36);
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 1px solid silver;
+    border-radius: 1rem;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 1px 2px 1px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
